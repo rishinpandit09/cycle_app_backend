@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>List</title>
+</head>
+<body>
+
+<h3>Cycle Information</h3>
+<table border=5>
+    <thead>
+        <td>ID</td>
+        <td>Model Name</td>
+        <td>Model Number</td>
+        <td>StationId</td>
+        <td>Address</td>
+    </thead>
+
+    {% for row in rows %}
+
+        <tr>
+            <td>{{row["id"]}}</td>
+            <td>{{row["model_name"]}}</td>
+            <td>{{row["model_number"]}}</td>
+            <td>{{row["stationId"]}}</td>
+            <td>{{row["address"]}}</td>
+        </tr>
+
+    {% endfor %}
+</table>
+<br><br>
+
+<a href="/">Go back to home page</a>
+
+</body>
+</html>
